@@ -1,0 +1,62 @@
+.container_category {
+  margin-bottom: 1.5rem;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+
+.category_title {
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.main {
+  background-color: #212529;
+  padding-bottom: 4rem;
+}
+
+.card {
+  margin-right: 5px;
+  max-width: 96%;
+  border: none;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+  height: 100%;
+  position: absolute;
+  border-radius: 5px;
+  background-color: #212529;
+  background-color: rgba(0, 0, 0, .5);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: apear 1s;
+  color: white;
+  font-weight: 400;
+}
+
+@keyframes apear {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.rating {
+  height: auto;
+}
+
+.card-body .btn {
+  background-color: #D81F26;
+  border: #D81F26;
+}
+
+.card-body .btn:hover {
+  background-color: #ff252c;
+}
