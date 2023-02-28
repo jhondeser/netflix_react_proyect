@@ -56,8 +56,8 @@ function Main() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: isDesktopOrLaptop ? 5 : isTabletOrMobile ? 2 : 1,
-    slidesToScroll: isDesktopOrLaptop ? 5 : isTabletOrMobile ? 2 : 1,
+    slidesToShow: isDesktopOrLaptop ? 5 : isTabletOrMobile ? 1 : 1,
+    slidesToScroll: isDesktopOrLaptop ? 5 : isTabletOrMobile ? 1 : 1,
   };
 
   useEffect(() => {
