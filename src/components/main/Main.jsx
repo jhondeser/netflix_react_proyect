@@ -100,7 +100,6 @@ function Main() {
                 </div> 
               ))}
             </div>
-      
     </section>
   )
 };
