@@ -17,6 +17,7 @@
 }
 
 .search_btn {
+  margin-left: 1rem;
   margin-right: 0.5rem;
   padding-top: 0.3rem;
 }
@@ -35,4 +36,19 @@
   margin-left: 2px;
 }
 
+.nav_net {
+  width: 100%;
+  justify-content: space-between;
+}
 
+.nav_rigth {
+  display: flex;
+}
+
+
+@media (max-width: 640px) {
+  .nav_rigth {
+    flex-direction: column;
+  }
+  
+}
