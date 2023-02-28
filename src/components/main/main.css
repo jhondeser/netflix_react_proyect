@@ -79,3 +79,10 @@
 .card-body .btn:hover {
   background-color: #96060a;
 }
+
+@media (max-width: 640px) {
+  .slick-arrow{
+    display: none !important;
+  }
+  
+}

@@ -6,6 +6,7 @@ import './main.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useMediaQuery } from "react-responsive";
 
 function StartRating(ratingPercentage) {
   const percentage = ratingPercentage
@@ -45,12 +46,18 @@ function Main() {
     setSelectedCard(card);
   };
 
+  const isDesktopOrLaptop = useMediaQuery({
+    query: "(min-device-width: 1224px)",
+  });
+
+  const isTabletOrMobile = useMediaQuery({ maxWidth: 1224 });
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToShow: isDesktopOrLaptop ? 5 : isTabletOrMobile ? 1 : 1,
+    slidesToScroll: isDesktopOrLaptop ? 5 : isTabletOrMobile ? 1 : 1,
   };
 
   useEffect(() => {
