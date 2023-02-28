@@ -10,7 +10,7 @@ import "slick-carousel/slick/slick-theme.css";
 function StartRating(ratingPercentage) {
   const percentage = ratingPercentage
   const valor = percentage.ratingPercentage
-  console.log(valor);
+
   const numStarsFilled = Math.floor((valor / 10) * 5);
 
   const stars = [];
@@ -49,8 +49,8 @@ function Main() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 5,
+    slidesToShow: 4,
+    slidesToScroll: 1,
   };
 
   useEffect(() => {
@@ -78,7 +78,7 @@ function Main() {
             <div className="main_categorys__container">
               {responseData.map((el, index) => (
                 <div className="container_category">
-                  <h4 className="category_title">{category_main[index]}</h4>
+                  <h3 className="category_title">{category_main[index]}</h3>
                   <Slider {...settings}>
                     {el.map((movie, index) => (
                       <Card 
@@ -94,7 +94,6 @@ function Main() {
                             </Card.Text>
                             <Button variant="primary">Play Movie</Button>
                           </Card.Body>
-                        
                       </Card>
                     ))}
                   </Slider>

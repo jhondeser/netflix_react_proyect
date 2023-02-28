@@ -5,10 +5,19 @@
   padding-top: 2rem;
 }
 
+.slick-slider ul{
+  display: none !important;
+}
+
+.slick-slide {
+  padding: 1rem;
+}
 
 .category_title {
   color: white;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
 }
 
 .main {
@@ -18,8 +27,18 @@
 
 .card {
   margin-right: 5px;
-  max-width: 96%;
+  max-width: 90%;
   border: none;
+}
+.card:hover {
+  animation: scale_big 1s;
+  scale: 1.08;
+  z-index: 1;
+}
+
+@keyframes scale_big {
+  0% {scale: 1;}
+  100% {scale: 1.08;}
 }
 
 .card-body {
@@ -58,5 +77,5 @@
 }
 
 .card-body .btn:hover {
-  background-color: #ff252c;
+  background-color: #96060a;
 }
