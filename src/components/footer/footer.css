@@ -54,3 +54,24 @@ a:hover {
   align-items: center;
   justify-content: center;
 }
+
+@media (max-width: 640px) {
+  .footer_container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .footer-wrapper {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .title_info__wrapper{
+    align-self: self-start;
+  }
+
+  .info_liks__container {
+    justify-content: flex-start;
+  }
+
+}
