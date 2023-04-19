@@ -41,14 +41,10 @@ function Hero() {
       let random_movie = result.data.results[Math.floor(Math.random() * (result.data.results.length - 1))];
       setHero(`https://image.tmdb.org/t/p/original${random_movie.backdrop_path}`);
       setMovie(random_movie)
-
-      console.log(random_movie);
     }
     
     fetchData();
   }, []);
-
-  console.log(movie);
   
   return (
     <section className="hero" style={{backgroundImage: `linear-gradient(to right, rgb(0 0 0 / 1), rgb(0 0 0 / 0)), url(${hero})`}}>
